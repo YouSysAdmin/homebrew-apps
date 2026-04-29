@@ -5,21 +5,21 @@
 class HeadscalePf < Formula
   desc "Obtaining information about groups and group members from external sources and populating groups in the Headscale policy"
   homepage "https://github.com/yousysadmin/headscale-pf"
-  version "2.4.0-pre"
+  version "2.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0-pre/headscale-pf_v2.4.0-pre_darwin_amd64.tar.gz"
-      sha256 "bad8cadcb352cc271e52249ec8e1645a3c3288cdc589cdebd1d1fcdf6b9eb8c3"
+      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0/headscale-pf_v2.4.0_darwin_amd64.tar.gz"
+      sha256 "84f61dad4658da8ac6efe029476dce593c4e9159052b6bac63f83fe89456034f"
 
       define_method(:install) do
         bin.install "headscale-pf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0-pre/headscale-pf_v2.4.0-pre_darwin_arm64.tar.gz"
-      sha256 "613147db92949b7c0497204f511fc32e18ddbdc8a6998ef3156b6dd9dc61a3d4"
+      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0/headscale-pf_v2.4.0_darwin_arm64.tar.gz"
+      sha256 "846a5cc5ffd7a0da5cb8fe1c7ecc29e62c64967225b45d7f0e19cb8148109af4"
 
       define_method(:install) do
         bin.install "headscale-pf"
@@ -29,15 +29,15 @@ class HeadscalePf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0-pre/headscale-pf_v2.4.0-pre_linux_amd64.tar.gz"
-      sha256 "a09d04183784099622630cebd690afa0f044b958ad84713721eceacadd24bf8f"
+      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0/headscale-pf_v2.4.0_linux_amd64.tar.gz"
+      sha256 "d0eaf0329921c4b16a784bf5c37289d780c1d57369287093363f0ebc66a01d50"
       define_method(:install) do
         bin.install "headscale-pf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0-pre/headscale-pf_v2.4.0-pre_linux_arm64.tar.gz"
-      sha256 "d0b1efa8974d8261b3126f0f426cb4bf4bece194a982b49cf98a439708657dbc"
+      url "https://github.com/YouSysAdmin/headscale-pf/releases/download/v2.4.0/headscale-pf_v2.4.0_linux_arm64.tar.gz"
+      sha256 "df2142f160239b24b0427da1ac59cd526592c53019c66cde4acec240a5d73839"
       define_method(:install) do
         bin.install "headscale-pf"
       end
