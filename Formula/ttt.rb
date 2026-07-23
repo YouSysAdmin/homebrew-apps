@@ -11,7 +11,7 @@ class Ttt < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/YouSysAdmin/ttt/releases/download/v0.1.0/ttt_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "7b15defc63ee279bd5db27ea3c983f592e685b15bf3e39dc39f13562c8682afb"
+      sha256 "53bbf27cc24a8eafd1ce561ca74be1e8c405bc76f24e9fc6fecc39d33be61973"
 
       define_method(:install) do
         bin.install "ttt"
@@ -22,14 +22,14 @@ class Ttt < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/YouSysAdmin/ttt/releases/download/v0.1.0/ttt_v0.1.0_linux_amd64.tar.gz"
-      sha256 "8302b8df5d9294b66f91994b6d454a1dc7bd41f70c49558d1a12b4ac8463449e"
+      sha256 "aec80bfa5b9cebfe8817f6d6230444fa3972aa958f24a0eb0e632a6b3fc9d139"
       define_method(:install) do
         bin.install "ttt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/YouSysAdmin/ttt/releases/download/v0.1.0/ttt_v0.1.0_linux_arm64.tar.gz"
-      sha256 "63bce1aa55a0cdfedd48cec2980e520edd2e37b4a125d6c736c15673f7e53f1b"
+      sha256 "0a9b59c7b444907c387e134d4a827e9f8a196d0ee95634bf935daa16ab5db027"
       define_method(:install) do
         bin.install "ttt"
       end
