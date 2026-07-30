@@ -5,13 +5,13 @@
 class Ttt < Formula
   desc "Task & Time Tracking tool"
   homepage "https://github.com/YouSysAdmin/ttt"
-  version "0.2.0"
+  version "0.3.0-pre"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/YouSysAdmin/ttt/releases/download/v0.2.0/ttt_v0.2.0_darwin_arm64.tar.gz"
-      sha256 "3a339a3beec0644aa1c17f7d19b055ec4aaa86217eacf612af28f47e7578d6cb"
+      url "https://github.com/YouSysAdmin/ttt/releases/download/v0.3.0-pre/ttt_v0.3.0-pre_darwin_arm64.tar.gz"
+      sha256 "b860a75071b2e718d015ba5264c72e9957e93c98ae8f473997d43a48e13156cc"
 
       define_method(:install) do
         bin.install "ttt"
@@ -21,15 +21,15 @@ class Ttt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/ttt/releases/download/v0.2.0/ttt_v0.2.0_linux_amd64.tar.gz"
-      sha256 "d424e168a822179025f53213fee22c98c8f334cfeb83d5479ae4eb62c25e6b2a"
+      url "https://github.com/YouSysAdmin/ttt/releases/download/v0.3.0-pre/ttt_v0.3.0-pre_linux_amd64.tar.gz"
+      sha256 "03961ac63690966e5be1bdcdc3e4a4d9af2f8faaed1468cee0bd28d03787a65a"
       define_method(:install) do
         bin.install "ttt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/ttt/releases/download/v0.2.0/ttt_v0.2.0_linux_arm64.tar.gz"
-      sha256 "28bf3aff503179cace3f638d456d17521bde907c897a64973c6730e7e55ca34a"
+      url "https://github.com/YouSysAdmin/ttt/releases/download/v0.3.0-pre/ttt_v0.3.0-pre_linux_arm64.tar.gz"
+      sha256 "6da3e9422b315f3ecd3359b9e860a46397d81122d448c87bb7f6ea44131121f5"
       define_method(:install) do
         bin.install "ttt"
       end
