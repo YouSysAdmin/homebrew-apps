@@ -4,7 +4,7 @@ cask "lmnt" do
 
   on_macos do
     on_arm do
-      sha256 "914ecf10736928155c743c1f5392b5e409a60dfbe94772518892c7ea21c8a858"
+      sha256 "e6bb1aeb01dea558c8da91e78d877cce41000559fde4053c1fad36d1b5d2234d"
       url "https://github.com/YouSysAdmin/lmnt/releases/download/v#{version}/lmnt_v#{version}_darwin_arm64.tar.gz"
     end
   end
