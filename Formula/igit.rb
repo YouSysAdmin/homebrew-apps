@@ -5,21 +5,21 @@
 class Igit < Formula
   desc "Review and GIT tools"
   homepage "https://github.com/yousysadmin/igit"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.0/igit_1.2.0_darwin_amd64.tar.gz"
-      sha256 "9005533045bd3289280f158027fe773934d9ac07047837b4c28fc323b4a400c3"
+      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.1/igit_1.2.1_darwin_amd64.tar.gz"
+      sha256 "57f65dff7fa1adf4e954545d3051bed01ad6a3336458a7399c3153482bcbdd3d"
 
       define_method(:install) do
         bin.install "igit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.0/igit_1.2.0_darwin_arm64.tar.gz"
-      sha256 "0da66c6f51941fa09530e2ad7be3f9bdb4fcd3b4f0e384ee7966310388a69801"
+      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.1/igit_1.2.1_darwin_arm64.tar.gz"
+      sha256 "832a0a23a5313f4e8d50fcf5e4bc2f1b1afd3c07d0725ca4954b7d8a16cf5701"
 
       define_method(:install) do
         bin.install "igit"
@@ -29,15 +29,15 @@ class Igit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.0/igit_1.2.0_linux_amd64.tar.gz"
-      sha256 "cd8ff48d29a35a927c8e516dca8203264943a8e612388047fe41014abc999d45"
+      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.1/igit_1.2.1_linux_amd64.tar.gz"
+      sha256 "5f1ac780ae938f5b116d67ac8e35e8f13a76d1e5099500973965a698b599e10a"
       define_method(:install) do
         bin.install "igit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.0/igit_1.2.0_linux_arm64.tar.gz"
-      sha256 "59753d24deda3f9534029bbecfef8eda0479ddd05e921a5666ec0c8f6951304c"
+      url "https://github.com/YouSysAdmin/igit/releases/download/v1.2.1/igit_1.2.1_linux_arm64.tar.gz"
+      sha256 "ef8da8c5389efacb5681631373fd51c92387062bbc3cc460d83faac7462385e0"
       define_method(:install) do
         bin.install "igit"
       end
