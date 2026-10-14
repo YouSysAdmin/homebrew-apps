@@ -6,25 +6,25 @@ cask "igit" do
     end
   end
 
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_arm do
-      sha256 "eeffe6db6e1487bd7faa4a79012dfaccad48c0f69c84566ff30c8687527f17da"
+      sha256 "8f4e6bbf4642db9973356917a4c1673211e8b0cf9d4119cb8d7c504b0180c481"
       url "https://github.com/YouSysAdmin/igit/releases/download/v#{version}/igit_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0e1094a7faf4126a4fcfac67d98c60732350ac89fea7271e72d08c29f1717c0c"
+      sha256 "fde88901cad2ad24486f513a4c5bc2aac1f7a64d1dae5141676ea1e35ed26187"
       url "https://github.com/YouSysAdmin/igit/releases/download/v#{version}/igit_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "5be076c964458c2b34610102b84ea17a66722d06b55598ff4a140cc9405c8bdc"
+      sha256 "fdd7a345e6d65933fed5079d5c354063a9072843135dad4b835be826ccde9fd6"
       url "https://github.com/YouSysAdmin/igit/releases/download/v#{version}/igit_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b887ae27f2cc0d44271da0d750ce5fd541b46cd563390086675767c6a8aedf52"
+      sha256 "dcc413bc96bf4162ebb2a52cc9c7594eb05b3bd7a8d084cf22641c6d54202df3"
       url "https://github.com/YouSysAdmin/igit/releases/download/v#{version}/igit_#{version}_linux_amd64.tar.gz"
     end
   end
