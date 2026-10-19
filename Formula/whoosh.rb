@@ -5,13 +5,13 @@
 class Whoosh < Formula
   desc "A single-binary deployment tool"
   homepage "https://github.com/YouSysAdmin/whoosh"
-  version "1.8.1"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/YouSysAdmin/whoosh/releases/download/v1.8.1/whoosh_v1.8.1_darwin_arm64.tar.gz"
-      sha256 "2ea5173a13a6f8692408ed89af8d49b9349ada850ef56560a31ecfad62d89bbd"
+      url "https://github.com/YouSysAdmin/whoosh/releases/download/v1.9.0/whoosh_v1.9.0_darwin_arm64.tar.gz"
+      sha256 "052b3999cb0d8e4749d424ea9de17329ee9d0a49b170165ec3e4e0d32947775e"
 
       define_method(:install) do
         bin.install "whoosh"
@@ -21,15 +21,15 @@ class Whoosh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/whoosh/releases/download/v1.8.1/whoosh_v1.8.1_linux_amd64.tar.gz"
-      sha256 "d4d8c76ae07f1e342d591ef2201592e38cec7e31153e0585d51ded85232ee4b6"
+      url "https://github.com/YouSysAdmin/whoosh/releases/download/v1.9.0/whoosh_v1.9.0_linux_amd64.tar.gz"
+      sha256 "a005d4412d41e3ed58e47b78022976ea03bf1ed30ffb6843bf8adb1cc007015c"
       define_method(:install) do
         bin.install "whoosh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/whoosh/releases/download/v1.8.1/whoosh_v1.8.1_linux_arm64.tar.gz"
-      sha256 "90304c63a6e81fcbe008e1d6109b91e3f5c4b1ff5fed0a819548e6aa29095292"
+      url "https://github.com/YouSysAdmin/whoosh/releases/download/v1.9.0/whoosh_v1.9.0_linux_arm64.tar.gz"
+      sha256 "b1095876acd3785b3dac369b83cc3812a14ec9ee7cb8bb8abe557335faf9e988"
       define_method(:install) do
         bin.install "whoosh"
       end
