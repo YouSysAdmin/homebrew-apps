@@ -5,21 +5,21 @@
 class Jc2aws < Formula
   desc "Get AWS credentials via Jumpcloud SAML"
   homepage "https://github.com/yousysadmin/jc2aws"
-  version "5.1.0"
+  version "5.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.0/jc2aws_v5.1.0_darwin_amd64.tar.gz"
-      sha256 "62bc781919e614e57b2cd67051a1bb6570d1ef8102f35ebfe280037102d5cf23"
+      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.1/jc2aws_v5.1.1_darwin_amd64.tar.gz"
+      sha256 "033a507bd8fec88e75ab7f582d7a477839362c9ea13e10fbd523f4185a36ce99"
 
       define_method(:install) do
         bin.install "jc2aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.0/jc2aws_v5.1.0_darwin_arm64.tar.gz"
-      sha256 "4ff9f97b340b1839236423640a6b35c9410f91bf7d22b0d5ef3a9eb96565231b"
+      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.1/jc2aws_v5.1.1_darwin_arm64.tar.gz"
+      sha256 "3397284446728c363e8fc957489ca5aafedf8947db9205b20c1be6465e84f752"
 
       define_method(:install) do
         bin.install "jc2aws"
@@ -29,15 +29,15 @@ class Jc2aws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.0/jc2aws_v5.1.0_linux_amd64.tar.gz"
-      sha256 "e09383b8ebad4b22cb0455ba308fd301ae59bb7bbe29cd2450714d59164f4bac"
+      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.1/jc2aws_v5.1.1_linux_amd64.tar.gz"
+      sha256 "2f6cd6bd52ae15e712b9fb2d36e23b7b8dd09c0fbca7bf517551103b97a6b3fc"
       define_method(:install) do
         bin.install "jc2aws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.0/jc2aws_v5.1.0_linux_arm64.tar.gz"
-      sha256 "22df23d5e4beea4f7056f0f4b00d4ade4b4294f20f7b5a5ecb700e4075ac7c88"
+      url "https://github.com/YouSysAdmin/jc2aws/releases/download/v5.1.1/jc2aws_v5.1.1_linux_arm64.tar.gz"
+      sha256 "7ab4340615969d1c4b0ad1b803e4ec75629e94a8f606ec44c17db6a080fcb306"
       define_method(:install) do
         bin.install "jc2aws"
       end
